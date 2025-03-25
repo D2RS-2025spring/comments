@@ -354,6 +354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#生成打分表" id="toc-生成打分表" class="nav-link" data-scroll-target="#生成打分表">生成打分表</a></li>
   <li><a href="#阅读并填写打分表" id="toc-阅读并填写打分表" class="nav-link" data-scroll-target="#阅读并填写打分表">阅读并填写打分表</a></li>
+  <li><a href="#成绩公示" id="toc-成绩公示" class="nav-link" data-scroll-target="#成绩公示">成绩公示</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/D2RS-2025spring/comments/edit/main/score.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/D2RS-2025spring/comments/blob/main/score.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
@@ -399,13 +400,17 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">group =</span> group, <span class="at">id =</span> ids)</span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>score_table <span class="ot">=</span> <span class="fu">bind_rows</span>(submitted) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">score =</span> <span class="dv">85</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>score_table <span class="ot">=</span> <span class="fu">bind_rows</span>(submitted) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">score =</span> <span class="dv">85</span>, <span class="at">extra =</span> <span class="st">""</span>)</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(score_table, <span class="st">"score-table.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="阅读并填写打分表" class="level2">
 <h2 class="anchored" data-anchor-id="阅读并填写打分表">阅读并填写打分表</h2>
 <p>线下阅读并填写打分表格。</p>
+</section>
+<section id="成绩公示" class="level2">
+<h2 class="anchored" data-anchor-id="成绩公示">成绩公示</h2>
+<p>公示成绩，以确保没有遗漏。公示期结束后，将成绩提交到教务系统。</p>
 
 
 </section>
